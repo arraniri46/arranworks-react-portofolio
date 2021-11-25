@@ -34,7 +34,7 @@ const Navbar = () => {
   const isDark = colorMode === "dark"
 
   return (
-    <Container maxW="container.xl">
+    <Container maxW="container.md">
       <Flex py={6} align="center">
         <Box align="center">
           <Logo />
