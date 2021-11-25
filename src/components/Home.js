@@ -1,14 +1,25 @@
-import { Container, Flex } from "@chakra-ui/layout"
-import Content from "./Content"
-import Navbar from "./Navbar"
+import { Container, Box, useMediaQuery } from '@chakra-ui/react'
+import Content from './Content'
+import Navbar from './Navbar'
+import Profile from './Profile'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import ProjectList from './layouts/ProjectList'
 
 const Home = () => {
+  const [isNotSmallScreen] = useMediaQuery('(min-width: 576px)')
+
   return (
-    <Container maxW="container.lg">
+    <Container maxW="container.md">
       <Navbar />
-      <Flex>
-        <Content />
-      </Flex>
+      <Box py={4} direction={isNotSmallScreen ? 'row' : 'column'}>
+        <Profile />
+      </Box>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Content />} />
+          <Route path="/projects" element={<ProjectList />} />
+        </Routes>
+      </BrowserRouter>
     </Container>
   )
 }

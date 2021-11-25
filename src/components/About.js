@@ -33,9 +33,10 @@ const About = () => {
         </Heading>
         <Box py={4}>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;Assalamu'alaikum, Hi Everyone. Garda is a
-            freelancer and a full-stack developer based in Medan with a passion
-            for making digital stuff.
+            &nbsp;&nbsp;&nbsp;&nbsp;Assalamu'alaikum, Hi Everyone. I am a
+            freelancer and a full-stack developer based in Medan, North of
+            Sumatera. I have passion for making digital stuff. I love to follow
+            the evolution about web technology development.
           </p>
           <Text mt={10}>
             <Code>#simplicity over #complexity</Code>

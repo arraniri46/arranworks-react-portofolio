@@ -1,19 +1,19 @@
-import { Box } from "@chakra-ui/layout"
 import {
   Tabs,
   TabList,
   Tab,
   Divider,
   TabPanels,
-  TabPanel
-} from "@chakra-ui/react"
-import Projects from "./Projects"
-import Skills from "./Skills"
-import Certificates from "./Certificates"
+  TabPanel,
+  Container
+} from '@chakra-ui/react'
+import Projects from './Projects'
+import Skills from './Skills'
+import Certificates from './Certificates'
 
 const TabsOfContent = () => {
   return (
-    <Box mt={12} maxW="3xl">
+    <Container maxW="container.lg">
       <Tabs
         variant="solid-rounded"
         colorScheme="blue"
@@ -22,12 +22,18 @@ const TabsOfContent = () => {
         isFitted
         isLazy
       >
-        <TabList fontFamily="Inter" mx={20} boxShadow="xs" borderRadius="xl" p={1}>
-          <Tab _hover={{ color: "whiteAlpha.900", bg: "blue.400" }}>Skills</Tab>
-          <Tab _hover={{ color: "whiteAlpha.900", bg: "blue.400" }}>
+        <TabList
+          fontFamily="Inter"
+          mx={20}
+          boxShadow="xs"
+          borderRadius="xl"
+          p={1}
+        >
+          <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>Skills</Tab>
+          <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>
             Portofolios
           </Tab>
-          <Tab _hover={{ color: "whiteAlpha.900", bg: "blue.400" }}>
+          <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>
             Certificates
           </Tab>
         </TabList>
@@ -44,7 +50,7 @@ const TabsOfContent = () => {
         </TabPanels>
       </Tabs>
       <Divider my={8} />
-    </Box>
+    </Container>
   )
 }
 

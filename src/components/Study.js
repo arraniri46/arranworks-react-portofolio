@@ -1,5 +1,5 @@
-import { Box, Heading, Text, Divider, Center } from "@chakra-ui/react"
-import { motion } from "framer-motion"
+import { Box, Heading, Text, Divider, Center } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 const Study = () => {
   return (
     <motion.div

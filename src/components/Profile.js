@@ -30,7 +30,7 @@ const Identity = () => {
       <Text fontSize="1.05em">
         <Link
           variant=""
-          href="https://github.com/arraniri46/"
+          href="https://github.com/arraniri46/arranworks-react-portofolio"
           isExternal
           display="inline-flex"
           p={1}
