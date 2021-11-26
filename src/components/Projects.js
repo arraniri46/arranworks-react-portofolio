@@ -27,16 +27,16 @@ const Projects = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Heading fontFamily="Inter" as="h3" size="lg" mb={6}>
+          <Heading fontFamily="Inter" as="h3" size="lg" mb={1}>
             Projects
           </Heading>
         </motion.div>
-        <Wrap flexDirection="row" justify="center" mt={8}>
+        <Wrap flexDirection="row" justify="center">
           <ProjectList projects cardVariants={cardVariants} />
         </Wrap>
         <Link to="/projects">
           <Button colorScheme="blue" mt={6}>
-            More
+            More Projects
             <Box ml={2}>
               <BsArrowUpRightCircle />
             </Box>

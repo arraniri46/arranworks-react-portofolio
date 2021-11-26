@@ -1,15 +1,15 @@
-import { Image } from "@chakra-ui/image"
-import { Box, Heading, Link, Spacer } from "@chakra-ui/layout"
-import { Text, Skeleton, Icon } from "@chakra-ui/react"
-import { useColorModeValue } from "@chakra-ui/color-mode"
-import { BsLinkedin, BsGithub, BsInstagram, BsFacebook } from "react-icons/bs"
+import { Image } from '@chakra-ui/image'
+import { Box, Heading, Link, Spacer } from '@chakra-ui/layout'
+import { Text, Skeleton, Icon } from '@chakra-ui/react'
+import { useColorModeValue } from '@chakra-ui/color-mode'
+import { BsLinkedin, BsGithub, BsInstagram, BsFacebook } from 'react-icons/bs'
 
 const Identity = () => {
   return (
     <Box boxSize={200} w="sm" align="start">
       <Heading
         fontFamily="Inter"
-        color={useColorModeValue("gray.600", "whiteAplha.900")}
+        color={useColorModeValue('gray.600', 'whiteAplha.900')}
       >
         Hi, I am
       </Heading>
@@ -17,7 +17,7 @@ const Identity = () => {
         fontSize={42}
         fontFamily="Inter"
         fontWeight="bold"
-        color={useColorModeValue("gray.600", "whiteAplha.900")}
+        color={useColorModeValue('gray.600', 'whiteAplha.900')}
       >
         Garda Arraniri
       </Text>
@@ -37,8 +37,8 @@ const Identity = () => {
         >
           <BsGithub
             style={{
-              marginRight: "4px",
-              marginTop: "4px"
+              marginRight: '4px',
+              marginTop: '4px'
             }}
           />
           Source
@@ -64,26 +64,37 @@ const ProfileAvatar = () => {
 const SocialMedia = () => {
   return (
     <Box
-      h={[5, "150px"]}
-      w={["100%", 5]}
+      h={[5, '150px']}
+      w={['100%', 5]}
       display="flex"
-      flexDirection={["row", "column"]}
+      flexDirection={['row', 'column']}
       justifyContent="space-between"
       mr={[0, 6]}
       mt={[10, 0]}
       px={[4, 0]}
     >
-      <Icon mt={2} as={BsLinkedin}></Icon>
-      <Icon mt={2} as={BsGithub}></Icon>
-      <Icon mt={2} as={BsInstagram}></Icon>
-      <Icon mt={2} as={BsFacebook}></Icon>
+      <Link
+        href="https://www.linkedin.com/in/garda-ar-51a72686/"
+        target="_blank"
+      >
+        <Icon mt={2} as={BsLinkedin}></Icon>
+      </Link>
+      <Link href="https://www.instagram.com/arraniri46/" target="_blank">
+        <Icon mt={2} as={BsInstagram}></Icon>
+      </Link>
+      <Link href="https://www.facebook.com/garda.rev46" target="_blank">
+        <Icon mt={2} as={BsFacebook}></Icon>
+      </Link>
+      <Link href="https://github.com/arraniri46" target="_blank">
+        <Icon mt={2} as={BsGithub}></Icon>
+      </Link>
     </Box>
   )
 }
 
 const Profile = () => {
   return (
-    <Box display={{ sm: "flex" }} align="center">
+    <Box display={{ sm: 'flex' }} align="center">
       <Identity />
       <Spacer />
       <SocialMedia />

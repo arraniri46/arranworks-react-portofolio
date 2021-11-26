@@ -59,7 +59,7 @@ const Certificates = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <Heading fontFamily="Inter" as="h3" size="lg" mb={6}>
+          <Heading fontFamily="Inter" as="h3" size="lg" mb={12}>
             Certificates
           </Heading>
         </motion.div>

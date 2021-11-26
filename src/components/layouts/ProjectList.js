@@ -11,6 +11,8 @@ import {
   Box
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
+import { Link } from 'react-router-dom'
+import ProjectDetails from '../ProjectDetails'
 
 const cardVariants = {
   hover: {
@@ -24,11 +26,13 @@ const cardVariants = {
 const ProjectList = () => {
   const projects = [
     {
+      id: 1,
       title: 'Fancy and Interactice Note App',
       desc: 'A Fancy and interactice note app made with love',
       image: '/background.jpg'
     },
     {
+      id: 2,
       title: 'Modern E-Commerce made with Love',
       desc: 'A modern interface e-commerce using VFX',
       image: '/background-2.jpg'
@@ -37,8 +41,9 @@ const ProjectList = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: '-5vh' }}
       animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 20 }}
+      exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
       <Wrap flexDirection="row" justify="center" mt={8}>
@@ -51,7 +56,7 @@ const ProjectList = () => {
                 boxShadow="xs"
                 flexDirection="column"
                 style={{ margin: '20px' }}
-                alignItems="center"
+                align="center"
               >
                 <Image
                   src={project.image}
@@ -59,17 +64,14 @@ const ProjectList = () => {
                   mt={2}
                 ></Image>
                 <Divider mt={4} />
-                <Box mt={4}>
-                  <LinkOverlay href="#">
-                    <Text
-                      style={{ fontSize: '1.2em', fontWeight: '600' }}
-                      noOfLines={2}
-                    >
+                <Link to={`${project.id}`}>
+                  <LinkOverlay>
+                    <Text style={{ fontSize: '1.2em', fontWeight: '600' }}>
                       {project.title}
                     </Text>
                   </LinkOverlay>
                   <Text style={{ fontSize: '0.95em' }}>{project.desc}</Text>
-                </Box>
+                </Link>
                 <Box w="100%" display="flex" pl={4} py={3} mt={6}>
                   <Box align="left">
                     <Text fontSize="0.8em">Stack</Text>
@@ -85,6 +87,8 @@ const ProjectList = () => {
           </motion.div>
         ))}
       </Wrap>
+
+      <ProjectDetails projects={projects} />
     </motion.div>
   )
 }

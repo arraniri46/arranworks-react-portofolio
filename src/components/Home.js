@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Profile from './Profile'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProjectList from './layouts/ProjectList'
+import ProjectDetails from './ProjectDetails'
 
 const Home = () => {
   const [isNotSmallScreen] = useMediaQuery('(min-width: 576px)')
@@ -18,6 +19,7 @@ const Home = () => {
         <Routes>
           <Route path="/" element={<Content />} />
           <Route path="/projects" element={<ProjectList />} />
+          <Route path="/projects/:id" element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
     </Container>

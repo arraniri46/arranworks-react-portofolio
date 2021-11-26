@@ -21,14 +21,9 @@ const TabsOfContent = () => {
         align="center"
         isFitted
         isLazy
+        mt={6}
       >
-        <TabList
-          fontFamily="Inter"
-          mx={20}
-          boxShadow="xs"
-          borderRadius="xl"
-          p={1}
-        >
+        <TabList fontFamily="Inter" boxShadow="xs" borderRadius="xl" p={1}>
           <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>Skills</Tab>
           <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>
             Portofolios
