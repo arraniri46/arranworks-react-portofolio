@@ -1,6 +1,6 @@
 import { Image } from '@chakra-ui/image'
 import { Box, Heading, Link, Spacer } from '@chakra-ui/layout'
-import { Text, Skeleton, Icon } from '@chakra-ui/react'
+import { Text, Skeleton, Icon, Container } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { BsLinkedin, BsGithub, BsInstagram, BsFacebook } from 'react-icons/bs'
 
@@ -21,7 +21,7 @@ const Identity = () => {
       >
         Garda Arraniri
       </Text>
-      <Skeleton w="93%" mb={2}>
+      <Skeleton w={300} mb={2}>
         skeleton
       </Skeleton>
       <Text mb={2} fontFamily="Inter">
@@ -94,12 +94,14 @@ const SocialMedia = () => {
 
 const Profile = () => {
   return (
-    <Box display={{ sm: 'flex' }} align="center">
-      <Identity />
-      <Spacer />
-      <SocialMedia />
-      <ProfileAvatar />
-    </Box>
+    <Container maxW="container.md">
+      <Box display={{ sm: 'flex' }} align="center">
+        <Identity />
+        <Spacer />
+        <SocialMedia />
+        <ProfileAvatar />
+      </Box>
+    </Container>
   )
 }
 

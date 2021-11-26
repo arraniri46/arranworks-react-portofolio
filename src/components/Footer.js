@@ -5,7 +5,8 @@ import {
   StatNumber,
   SimpleGrid,
   Text,
-  Alert
+  Alert,
+  Divider
 } from '@chakra-ui/react'
 
 const stats = [
@@ -35,7 +36,8 @@ const Footer = () => {
           ))}
         </SimpleGrid>
       </Box>
-      <Text mt={12} mb={4}>
+      <Divider mt={8} />
+      <Text mt={2} mb={4}>
         &copy;2021 Garda Arraniri. All Rights Reserved.
       </Text>
     </Box>

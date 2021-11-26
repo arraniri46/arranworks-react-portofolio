@@ -10,6 +10,7 @@ import {
   LinkOverlay,
   Button
 } from '@chakra-ui/react'
+
 import { motion } from 'framer-motion'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
 
@@ -22,30 +23,30 @@ const cardVariants = {
   }
 }
 
-const Certificates = () => {
-  const certificates = [
-    {
-      title: 'Data Visualization with python',
-      desc: 'Data Visualization using python',
-      image: '/certificate-data-visualization-python.jpg'
-    },
-    {
-      title: 'Element Of AI',
-      desc: 'Introduction to Artificial Intelligence',
-      image: '/certificate-element-of-AI.jpg'
-    },
-    {
-      title: 'Adobe Certified Associate',
-      desc: 'Graphic Design and Illustration using Adobe Illustrator CS6',
-      image: '/certificate-aca.png'
-    },
-    {
-      title: 'IBM - Machine Learning',
-      desc: ' Pelatihan IBM – Machine Learning Program Fresh Graduate Academy Digital Talent Scholarship',
-      image: '/certificate-machine-learning.jpg'
-    }
-  ]
+const certificates = [
+  {
+    title: 'Data Visualization with python',
+    desc: 'Data Visualization using python',
+    image: '/images/certificate-data-visualization-python.png'
+  },
+  {
+    title: 'Element Of AI',
+    desc: 'Introduction to Artificial Intelligence',
+    image: '/images/certificate-element-of-ai.png'
+  },
+  {
+    title: 'Adobe Certified Associate',
+    desc: 'Graphic Design and Illustration using Adobe Illustrator CS6',
+    image: '/images/certificate-aca.png'
+  },
+  {
+    title: 'IBM - Machine Learning',
+    desc: ' Pelatihan IBM – Machine Learning Program Fresh Graduate Academy Digital Talent Scholarship',
+    image: '/images/certificate-machine-learning.png'
+  }
+]
 
+const Certificates = () => {
   return (
     <motion.div
       animate={{ opacity: 1, y: 0 }}
@@ -82,7 +83,7 @@ const Certificates = () => {
                   ></Image>
                   <Divider mt={4} />
                   <Box mt={4}>
-                    <LinkOverlay href="#">
+                    <LinkOverlay as="button" key={index}>
                       <Text
                         style={{ fontSize: '1.2em', fontWeight: '600' }}
                         noOfLines={2}
@@ -100,6 +101,7 @@ const Certificates = () => {
             </motion.div>
           ))}
         </Wrap>
+
         <Button colorScheme="blue">
           More
           <Box ml={2}>

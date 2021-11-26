@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <Container maxW="container.md">
-      <Flex pt={4} mx={-4} mb={12} align="center">
+      <Flex pt={4} mb={12} align="center">
         <Box align="center">
           <Logo />
         </Box>

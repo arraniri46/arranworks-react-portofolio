@@ -10,7 +10,7 @@ const Home = () => {
   const [isNotSmallScreen] = useMediaQuery('(min-width: 576px)')
 
   return (
-    <Container maxW="container.md">
+    <Container maxW="container.lg">
       <Navbar />
       <Box py={4} direction={isNotSmallScreen ? 'row' : 'column'}>
         <Profile />
