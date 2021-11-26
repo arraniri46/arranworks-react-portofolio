@@ -1,4 +1,3 @@
-import Icon from '@chakra-ui/icon'
 import { Box, Text } from '@chakra-ui/react'
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from '@chakra-ui/tabs'
 import { MdSchool, MdWork } from 'react-icons/md'
