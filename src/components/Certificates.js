@@ -1,27 +1,8 @@
-import {
-  Heading,
-  Box,
-  Text,
-  Image,
-  Divider,
-  Wrap,
-  WrapItem,
-  LinkBox,
-  LinkOverlay,
-  Button
-} from '@chakra-ui/react'
+import { Heading, Box, Wrap, Button } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
-
-const cardVariants = {
-  hover: {
-    scale: 1.1,
-    transition: {
-      duration: 0.3
-    }
-  }
-}
+import ListCertificates from './ListCertificates'
 
 const certificates = [
   {
@@ -66,42 +47,9 @@ const Certificates = () => {
         </motion.div>
         <Wrap flexDirection="row" justify="center">
           {certificates.map((certificate, index) => (
-            <motion.div variants={cardVariants} whileHover="hover" key={index}>
-              <LinkBox>
-                <WrapItem
-                  w="300px"
-                  h="320px"
-                  boxShadow="xs"
-                  flexDirection="column"
-                  style={{ margin: '10px' }}
-                  alignItems="center"
-                >
-                  <Image
-                    src={certificate.image}
-                    style={{ width: 270, height: 180 }}
-                    mt={2}
-                  ></Image>
-                  <Divider mt={4} />
-                  <Box mt={4}>
-                    <LinkOverlay as="button" key={index}>
-                      <Text
-                        style={{ fontSize: '1.2em', fontWeight: '600' }}
-                        noOfLines={2}
-                      >
-                        {certificate.title}
-                      </Text>
-                    </LinkOverlay>
-                    <Text style={{ fontSize: '0.95em' }}>
-                      {certificate.desc}
-                    </Text>
-                  </Box>
-                  <Box w="100%" display="flex" pl={4} py={3} mt={6}></Box>
-                </WrapItem>
-              </LinkBox>
-            </motion.div>
+            <ListCertificates certificate={certificate} key={index} />
           ))}
         </Wrap>
-
         <Button colorScheme="blue">
           More
           <Box ml={2}>

@@ -7,7 +7,6 @@ import {
   Icon,
   Spacer,
   LinkBox,
-  LinkOverlay,
   Box
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
@@ -57,6 +56,7 @@ const ProjectList = () => {
                 flexDirection="column"
                 style={{ margin: '20px' }}
                 align="center"
+                as="button"
               >
                 <Image
                   src={project.image}
@@ -64,14 +64,14 @@ const ProjectList = () => {
                   mt={2}
                 ></Image>
                 <Divider mt={4} />
-                <Link to={`${project.id}`}>
-                  <LinkOverlay>
+                <Box>
+                  <Link to={`${project.id}`}>
                     <Text style={{ fontSize: '1.2em', fontWeight: '600' }}>
                       {project.title}
                     </Text>
-                  </LinkOverlay>
+                  </Link>
                   <Text style={{ fontSize: '0.95em' }}>{project.desc}</Text>
-                </Link>
+                </Box>
                 <Box w="100%" display="flex" pl={4} py={3} mt={6}>
                   <Box align="left">
                     <Text fontSize="0.8em">Stack</Text>
