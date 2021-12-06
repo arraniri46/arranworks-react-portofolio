@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/react'
 import { useDisclosure } from '@chakra-ui/hooks'
 import ShowModal from './ShowModal'
-import { useState } from 'react'
 
 const cardVariants = {
   hover: {
@@ -24,11 +23,8 @@ const cardVariants = {
 const ListCertificates = ({ certificate, index }) => {
   const { onOpen, isOpen, onClose } = useDisclosure()
 
-  // const [detailCertificate, setDetailCertificate] = useState()
-
   const handleOpen = (a) => {
     onOpen()
-    // setDetailCertificate({ a })
   }
 
   return (
