@@ -2,7 +2,7 @@ import { Heading, Box, Wrap, Button } from '@chakra-ui/react'
 
 import { motion } from 'framer-motion'
 import { BsArrowUpRightCircle } from 'react-icons/bs'
-import ListCertificates from './ListCertificates'
+import CertificatesList from './CertificatesList'
 
 const certificates = [
   {
@@ -47,11 +47,11 @@ const Certificates = () => {
         </motion.div>
         <Wrap flexDirection="row" justify="center">
           {certificates.map((certificate, index) => (
-            <ListCertificates certificate={certificate} key={index} />
+            <CertificatesList certificate={certificate} key={index} />
           ))}
         </Wrap>
-        <Button colorScheme="blue">
-          More
+        <Button colorScheme="blue" mt={12}>
+          More Certificates
           <Box ml={2}>
             <BsArrowUpRightCircle />
           </Box>

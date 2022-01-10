@@ -57,7 +57,7 @@ const About = (props) => {
               <Code>#simplicity over #complexity</Code>
             </Text>
           </Box>
-          <Box display="flex" mt={100} mb={10} flexDirection="column">
+          <Box display="flex" mt={6} mb={10} flexDirection="column" maxW={150}>
             <Link href="mailto:garda.arraniri@gmail.com">
               <Button w="8em" colorScheme="blue">
                 <EmailIcon mr={2} />
@@ -65,6 +65,7 @@ const About = (props) => {
               </Button>
             </Link>
             <Link
+              href="download/cv_garda_arraniri.pdf"
               mt={2}
               color={useColorModeValue('blue.500', 'whiteAlpha.700')}
               fontSize="0.9em"

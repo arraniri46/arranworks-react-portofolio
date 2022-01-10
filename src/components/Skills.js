@@ -7,7 +7,7 @@ const Skills = () => {
       animate={{ opacity: 1, marginTop: 0 }}
       transition={{ duration: 0.5 }}
     >
-      Hello Skills
+      !!! Under Construction !!!
     </motion.div>
   )
 }

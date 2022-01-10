@@ -1,7 +1,6 @@
 import { Container, Divider } from '@chakra-ui/react'
 import { Box } from '@chakra-ui/layout'
 import TabsOfContent from './TabsOfContent'
-import Footer from './Footer'
 import About from './About'
 import Bio from './Bio'
 
@@ -17,9 +16,6 @@ const Content = () => {
       </Box>
       <Box>
         <Bio />
-      </Box>
-      <Box>
-        <Footer />
       </Box>
     </Container>
   )

@@ -1,6 +1,5 @@
-import { Heading, Box, Button } from '@chakra-ui/react'
+import { Heading, Box } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { BsArrowUpRightCircle } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 import ProjectList from './layouts/ProjectList'
 
@@ -31,14 +30,14 @@ const Projects = () => {
             Projects
           </Heading>
         </motion.div>
-        <ProjectList projects cardVariants={cardVariants} />
+        <ProjectList cardVariants={cardVariants} />
         <Link to="/projects">
-          <Button colorScheme="blue" mt={6}>
+          {/* <Button colorScheme="blue" mt={12}>
             More Projects
             <Box ml={2}>
               <BsArrowUpRightCircle />
             </Box>
-          </Button>
+          </Button> */}
         </Link>
       </Box>
     </motion.div>

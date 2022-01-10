@@ -20,7 +20,7 @@ const cardVariants = {
   }
 }
 
-const ListCertificates = ({ certificate, index }) => {
+const CertificatesList = ({ certificate, index }) => {
   const { onOpen, isOpen, onClose } = useDisclosure()
 
   const handleOpen = (a) => {
@@ -54,7 +54,9 @@ const ListCertificates = ({ certificate, index }) => {
                 {certificate.title}
               </Text>
             </LinkOverlay>
-            <Text style={{ fontSize: '0.95em' }}>{certificate.desc}</Text>
+            <Text style={{ fontSize: '0.95em' }} mt={4}>
+              {certificate.desc}
+            </Text>
           </Box>
           <Box w="100%" display="flex" pl={4} py={3} mt={6}></Box>
         </WrapItem>
@@ -64,4 +66,4 @@ const ListCertificates = ({ certificate, index }) => {
   )
 }
 
-export default ListCertificates
+export default CertificatesList

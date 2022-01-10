@@ -10,14 +10,6 @@ import {
 import { Button, Image, Text, Box } from '@chakra-ui/react'
 
 const ShowModal = (props) => {
-  // const listCertificates = props.certificates
-
-  // const [detailCerti, setDetailCerti] = useState(listCertificates)
-
-  // const details = props.details.a
-
-  // console.log(props.detail)
-
   return (
     <Box alignItems="center" flexDirection="column">
       <Modal isOpen={props.isOpen} onClose={props.onClose} size="lg">

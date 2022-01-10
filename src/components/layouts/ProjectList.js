@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
-import ProjectDetails from '../ProjectDetails'
+import data from '../../data.js'
 
 const cardVariants = {
   hover: {
@@ -23,20 +23,7 @@ const cardVariants = {
 }
 
 const ProjectList = () => {
-  const projects = [
-    {
-      id: 1,
-      title: 'Fancy and Interactice Note App',
-      desc: 'A Fancy and interactice note app made with love',
-      image: '/background.jpg'
-    },
-    {
-      id: 2,
-      title: 'Modern E-Commerce made with Love',
-      desc: 'A modern interface e-commerce using VFX',
-      image: '/background-2.jpg'
-    }
-  ]
+  const projects = data
 
   return (
     <motion.div
@@ -59,20 +46,22 @@ const ProjectList = () => {
                 as="button"
               >
                 <Image
-                  src={project.image}
+                  src={project.image[0]}
                   style={{ width: 290, height: 180 }}
                   mt={2}
                 ></Image>
                 <Divider mt={4} />
                 <Box>
-                  <Link to={`${project.id}`}>
+                  <Link to={`projects/${project.id}`}>
                     <Text style={{ fontSize: '1.2em', fontWeight: '600' }}>
                       {project.title}
                     </Text>
                   </Link>
-                  <Text style={{ fontSize: '0.95em' }}>{project.desc}</Text>
+                  <Text style={{ fontSize: '0.95em' }} mt={4}>
+                    {project.desc}
+                  </Text>
                 </Box>
-                <Box w="100%" display="flex" pl={4} py={3} mt={6}>
+                <Box w="100%" display="flex" pl={4} py={3} mt={2}>
                   <Box align="left">
                     <Text fontSize="0.8em">Stack</Text>
                   </Box>
@@ -87,8 +76,6 @@ const ProjectList = () => {
           </motion.div>
         ))}
       </Wrap>
-
-      <ProjectDetails projects={projects} />
     </motion.div>
   )
 }
