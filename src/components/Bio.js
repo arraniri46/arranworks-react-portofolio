@@ -7,7 +7,7 @@ import WorkExperience from './WorkExperience'
 const Bio = () => {
   return (
     <Box px={8} align="center">
-      <Tabs variant="solid-rounded" isFitted size="md" maxW="sm" isLazy>
+      <Tabs variant="enclosed" isFitted size="md" maxW="sm" isLazy>
         <TabList>
           <Tab _hover={{ color: 'whiteAlpha.900', bg: 'blue.400' }}>
             <MdSchool />

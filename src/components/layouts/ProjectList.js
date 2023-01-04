@@ -4,7 +4,6 @@ import {
   Divider,
   Wrap,
   WrapItem,
-  Icon,
   Spacer,
   LinkBox,
   Box
@@ -12,6 +11,7 @@ import {
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import data from '../../data.js'
+import { DiBootstrap, DiDjango, DiPython } from 'react-icons/di'
 
 const cardVariants = {
   hover: {
@@ -66,10 +66,9 @@ const ProjectList = () => {
                     <Text fontSize="0.8em">Stack</Text>
                   </Box>
                   <Spacer />
-                  <Icon></Icon>
-                  <Icon></Icon>
-                  <Icon></Icon>
-                  <Icon></Icon>
+                  <DiPython />
+                  <DiDjango />
+                  <DiBootstrap />
                 </Box>
               </WrapItem>
             </LinkBox>

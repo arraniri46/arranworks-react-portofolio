@@ -48,10 +48,17 @@ const About = (props) => {
           </Heading>
           <Box py={4}>
             <p>
-              &nbsp;&nbsp;&nbsp;&nbsp;Assalamu'alaikum, Hi Everyone. I am a
-              freelancer and a full-stack developer based in Medan, North of
-              Sumatera. I have passion for making digital stuff. I love to
-              follow the evolution around web technology development.
+              &nbsp;&nbsp;&nbsp;&nbsp;I am Garda, graduated as Information
+              Technology Program in University of Sumatera Utara. A solo
+              Fullstack Developer with less than 1 year of experience who have
+              passion for creating digital stuff. I love to keep up with the
+              evolution around web technology development. Familiar with
+              application development especially web development. Proven to have
+              developed personal projects as well as clients project{' '}
+              <i>
+                <b>(look at portofolios section)</b>
+              </i>
+              .
             </p>
             <Text mt={10}>
               <Code>#simplicity over #complexity</Code>
@@ -65,7 +72,7 @@ const About = (props) => {
               </Button>
             </Link>
             <Link
-              href="download/cv_garda_arraniri.pdf"
+              href="download/Curriculum Vitae - Garda Arraniri.pdf"
               mt={2}
               color={useColorModeValue('blue.500', 'whiteAlpha.700')}
               fontSize="0.9em"

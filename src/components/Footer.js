@@ -30,8 +30,8 @@ const Footer = () => {
         ></Alert>
         <Box maxW="7xl" mx="auto" px={{ base: '6', md: '8' }}>
           <SimpleGrid columns={{ base: 1, md: 3 }} spacing="6">
-            {stats.map(({ label, value }) => (
-              <Stat boxShadow="base" key={label} p={2}>
+            {stats.map(({ label, value }, index) => (
+              <Stat boxShadow="base" key={index} p={2}>
                 <StatLabel>{label}</StatLabel>
                 <StatNumber>{value}</StatNumber>
               </Stat>
@@ -40,7 +40,7 @@ const Footer = () => {
         </Box>
         <Divider mt={8} />
         <Text mt={2} mb={4}>
-          &copy;2021 Garda Arraniri. All Rights Reserved.
+          &copy;2023 Garda Arraniri. All Rights Reserved.
         </Text>
       </Container>
     </>

@@ -16,8 +16,8 @@ const TabsOfContent = () => {
     <>
       <Container maxW="container.lg">
         <Tabs
-          variant="solid-rounded"
-          defaultIndex={1}
+          variant="enclosed"
+          defaultIndex={0}
           colorScheme="blue"
           size="md"
           align="center"

@@ -53,7 +53,7 @@ const ClusteringApp = () => {
                 <Text as="mark" bg="blue.500" color="white">
                   STACK :
                 </Text>
-                <span> ReactJS, Chakra-UI, framer-motion</span>
+                <span> Python, Django, Bootstrap, K-Prototype Library</span>
               </ListItem>
             </List>
           </Box>
