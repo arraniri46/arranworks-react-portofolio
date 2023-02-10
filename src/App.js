@@ -6,7 +6,7 @@ import { AnimatePresence } from 'framer-motion'
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <AnimatePresence exitBeforeEnter initial={true}>
+      <AnimatePresence initial={true}>
         <Home />
       </AnimatePresence>
     </ChakraProvider>

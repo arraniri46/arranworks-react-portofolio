@@ -47,7 +47,7 @@ const ProjectList = () => {
               >
                 <Image
                   src={project.image[0]}
-                  style={{ width: 290, height: 180 }}
+                  style={{ width: 290, height: 140 }}
                   mt={2}
                 ></Image>
                 <Divider mt={4} />

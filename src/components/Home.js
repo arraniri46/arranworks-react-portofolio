@@ -4,8 +4,10 @@ import Navbar from './Navbar'
 import Profile from './Profile'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProjectList from './layouts/ProjectList'
-import ClusteringApp from './works/ClusteringApp'
 import Footer from './Footer'
+import ClusteringApp from './works/ClusteringApp'
+import MupiBang from './works/MupiBang'
+import Nowted from './works/Nowted'
 
 const Home = () => {
   const [isNotSmallScreen] = useMediaQuery('(min-width: 576px)')
@@ -22,6 +24,8 @@ const Home = () => {
             <Route path="/" element={<Content />} />
             <Route path="/projects" element={<ProjectList />} />
             <Route path="/projects/1" element={<ClusteringApp />} />
+            <Route path="/projects/2" element={<MupiBang />} />
+            <Route path="/projects/3" element={<Nowted />} />
           </Routes>
         </BrowserRouter>
         <Footer />

@@ -37,7 +37,7 @@ const dataSkills = [
   },
   {
     title: 'Tailwind CSS',
-    desc: 'A utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup',
+    desc: 'A utility-first CSS framework packed with classes that can be composed to build any design.',
     image: '/images/tailwindcss-icon.svg'
   },
   {
@@ -70,19 +70,27 @@ const Skills = () => {
           </Heading>
         </motion.div>
 
-        <Flex direction="row" wrap="wrap" fontFamily="Inter">
+        <Flex
+          direction="row"
+          wrap="wrap"
+          fontFamily="Inter"
+          justify="center"
+          align="center"
+        >
           {dataSkills.map((skill, index) => (
             <Card
+              key={index}
               direction={{ base: 'column', sm: 'row' }}
               overflow="hidden"
               variant="outline"
               w={330}
               border="none"
+              justify="center"
             >
               <Image
                 src={skill.image}
-                maxW={{ base: '100%', sm: '50px' }}
-                alignItems="self-start"
+                maxW={{ base: '60px', sm: '50px' }}
+                alignSelf="center"
               ></Image>
               <Stack>
                 <CardBody textAlign="start">
