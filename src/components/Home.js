@@ -8,6 +8,7 @@ import Footer from './Footer'
 import ClusteringApp from './works/ClusteringApp'
 import MupiBang from './works/MupiBang'
 import Nowted from './works/Nowted'
+import ThalikaBagstore from './works/ThalikaBagstore'
 
 const Home = () => {
   const [isNotSmallScreen] = useMediaQuery('(min-width: 576px)')
@@ -26,6 +27,7 @@ const Home = () => {
             <Route path="/projects/1" element={<ClusteringApp />} />
             <Route path="/projects/2" element={<MupiBang />} />
             <Route path="/projects/3" element={<Nowted />} />
+            <Route path="/projects/4" element={<ThalikaBagstore />} />
           </Routes>
         </BrowserRouter>
         <Footer />

@@ -21,6 +21,12 @@ const data = [
     title: 'Nowted Slicing',
     desc: 'Slicing challenge design of Nowted App from codedesign.dev',
     image: ['/images/nowted-1.JPG']
+  },
+  {
+    id: 4,
+    title: 'Thalika Bagstore',
+    desc: 'Thalika Bagstore adalah toko online yang menyediakan berbagai jenis tas wanita yang stylish dan modern.',
+    image: ['/images/thalika-1.JPG', '/images/thalika-2.JPG']
   }
 ]
 

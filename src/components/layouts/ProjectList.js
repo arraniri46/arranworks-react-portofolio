@@ -67,7 +67,6 @@ const ProjectList = () => {
                   </Box>
                   <Spacer />
                   <DiPython />
-                  <DiDjango />
                   <DiBootstrap />
                 </Box>
               </WrapItem>
