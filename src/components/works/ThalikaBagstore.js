@@ -6,7 +6,6 @@ import {
   Link,
   List,
   ListItem,
-  Spacer,
   Text
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
