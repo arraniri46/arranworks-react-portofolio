@@ -26,7 +26,11 @@ const data = [
     id: 4,
     title: 'Thalika Bagstore',
     desc: 'Thalika Bagstore adalah toko online yang menyediakan berbagai jenis tas wanita yang stylish dan modern.',
-    image: ['/images/thalika-1.JPG', '/images/thalika-2.JPG']
+    image: [
+      '/images/thumbnail-thalika-1.JPG',
+      '/images/thumbnail-thalika-2.JPG',
+      '/images/thumbnail-thalika-3.JPG'
+    ]
   }
 ]
 

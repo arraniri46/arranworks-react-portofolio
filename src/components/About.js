@@ -49,12 +49,12 @@ const About = (props) => {
           <Box py={4}>
             <p>
               &nbsp;&nbsp;&nbsp;&nbsp;I am Garda, graduated as Information
-              Technology Program in University of Sumatera Utara. A solo
-              Fullstack Developer with less than 1 year of experience who have
-              passion for creating digital stuff. I love to keep up with the
-              evolution around web technology development. Familiar with
-              application development especially web development. Proven to have
-              developed personal projects as well as clients project{' '}
+              Technology Program in University of Sumatera Utara. A Frontend
+              Engineer about 1 year of experience who have passion for creating
+              digital stuff. I love to keep up with the evolution around web
+              technology development. Familiar with application development
+              especially web development. Proven to have developed personal
+              projects{' '}
               <i>
                 <b>(look at portofolios section)</b>
               </i>

@@ -18,7 +18,7 @@ const WorkExperience = () => {
             <Center h="25px">
               <Divider orientation="vertical" mx={6} />
             </Center>
-            <Text>Solo Full-stack Developer</Text>
+            <Text>Solo Frontend Engineer</Text>
           </Box>
         </Box>
       </Box>

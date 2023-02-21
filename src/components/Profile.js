@@ -25,7 +25,7 @@ const Identity = () => {
         skeleton
       </Skeleton>
       <Text mb={2} fontFamily="Inter">
-        Solo Full-stack Developer (Digital Artisan)
+        Solo Frontend Engineer (Digital Artisan)
       </Text>
       <Text fontSize="1.05em">
         <Link

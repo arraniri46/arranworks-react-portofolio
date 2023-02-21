@@ -36,19 +36,19 @@ const Nowted = () => {
                   LINK :
                 </Text>
                 <Link
-                  href="https://nowted-app-slicing.vercel.app"
+                  href="https://thalikabag.store"
                   color="red.200"
                   target="_blank"
                 >
                   {' '}
-                  Under Development
+                  https://thalikabag.store
                 </Link>
               </ListItem>
               <ListItem>
                 <Text as="mark" bg="blue.500" color="white">
                   TITLE :
                 </Text>
-                <span> Nowted App</span>
+                <span> Thalika Bagstore</span>
               </ListItem>
               <ListItem>
                 <Text as="mark" bg="blue.500" color="white">
@@ -69,6 +69,8 @@ const Nowted = () => {
             <Divider my={8} />
 
             <Image borderRadius={10} src={dataProjects[3].image[1]}></Image>
+            <Divider my={8} />
+            <Image borderRadius={10} src={dataProjects[3].image[2]}></Image>
             <Divider my={8} />
           </Box>
         </Box>
