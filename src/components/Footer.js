@@ -13,7 +13,7 @@ import {
 const stats = [
   { label: 'Experience', value: '1 yrs' },
   { label: 'Projects Completed', value: '3' },
-  { label: 'Projects Ongoing', value: '1' }
+  { label: 'Projects Ongoing', value: '2' }
 ]
 
 const Footer = () => {

@@ -72,6 +72,8 @@ const Nowted = () => {
             <Divider my={8} />
             <Image borderRadius={10} src={dataProjects[3].image[2]}></Image>
             <Divider my={8} />
+            <Image borderRadius={10} src={dataProjects[3].image[3]}></Image>
+            <Divider my={8} />
           </Box>
         </Box>
       </Container>
